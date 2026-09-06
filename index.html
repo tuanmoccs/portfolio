@@ -3,225 +3,216 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trinh Tuan Anh - Portfolio</title>
+    <title>Trinh Tuan Anh | Fullstack Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Trinh Tuan Anh - Fullstack Developer specializing in Japanese Outsource systems, React, Vue.js, Laravel, Node.js, TypeScript, and Docker.">
+    <!-- Google Fonts: Inter for clean professional English/Vietnamese typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <!-- Replace with your actual image -->
-            <img src="images/TuanAnh.jpg" alt="Tuan Anh Trinh" class="profile-img">
-            <h1>TRINH TUAN ANH</h1>
-            <p class="tagline">IT Developer | Aspiring Fullstack Developer</p>
-            <div class="social-links">
-                <a href="https://github.com/tuanmoccs" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-accent">Tuan Anh</span>.dev
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="nav-item" data-en="About" data-vi="Giới Thiệu">About</a></li>
+                <li><a href="#experience" class="nav-item" data-en="Experience" data-vi="Kinh Nghiệm">Experience</a></li>
+                <li><a href="#projects" class="nav-item" data-en="Projects" data-vi="Dự Án">Projects</a></li>
+                <li><a href="#skills" class="nav-item" data-en="Skills" data-vi="Kỹ Năng">Skills</a></li>
+                <li><a href="#education" class="nav-item" data-en="Education" data-vi="Học Vấn">Education</a></li>
+                <li><a href="#contact" class="nav-item" data-en="Contact" data-vi="Liên Hệ">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <!-- Language Switcher Button -->
+                <div class="lang-switcher">
+                    <button id="langToggle" class="lang-btn" aria-label="Switch Language">
+                        <i class="fas fa-globe"></i>
+                        <span id="langLabel">EN</span>
+                    </button>
+                </div>
+                <a href="#contact" class="btn btn-sm btn-primary" data-en="Contact Me" data-vi="Liên hệ ngay">Contact Me</a>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
         </div>
-    </header>
+    </nav>
 
-    <section id="about" class="hidden">
-        <div class="container">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>Information</h3>
-                    <p><strong>FullName:</strong>     Trinh Tuan Anh</p>
-                    <p><strong>Birthday:</strong>     01/08/2003</p>
-                    <p><strong>Email:</strong>        trinhmoc18@gmail.com</p>
-                    <p><strong>Numberphone:</strong>  0971627072</p>
-
-                    <h3>Career Objective</h3>
-                    <p>Motivated by real-world development experience, I strive to sharpen my technical skills and grow into a competent Fullstack Developer with a solid foundation in software architecture.</p>
-                    
-                    <h3>Development Goals</h3>
-                    <p><strong>Short-term:</strong> Adapt to a professional work environment, enhance technical skills.</p>
-                    <p><strong>Long-term:</strong>  Become a Fullstack Developer, expand knowledge of system architecture, and develop software solutions.</p>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge-status">
+                    <span class="status-dot"></span> 
+                    <span data-en="Available for new opportunities" data-vi="Sẵn sàng cho cơ hội mới">Available for new opportunities</span>
+                </div>
+                <h1 class="hero-title" data-en="Trinh Tuan Anh" data-vi="Trịnh Tuấn Anh">Trinh Tuan Anh</h1>
+                <h2 class="hero-subtitle">Fullstack Developer</h2>
+                <p class="hero-description" data-en="Passionate Fullstack Developer with practical experience in building Japanese enterprise outsourcing systems and web/mobile products. Proficient in React, Vue.js, Laravel, Node.js (Express), TypeScript, Nx Monorepo architecture, and Docker/Cloud VPS deployments." data-vi="Lập trình viên Fullstack có kinh nghiệm thực tế trong việc xây dựng hệ thống Outsource Nhật Bản và sản phẩm Web/Mobile. Thành thạo hệ sinh thái React, Vue.js, Laravel, Node.js (Express), TypeScript, kiến trúc Nx Monorepo và triển khai hệ thống Docker / Cloud VPS.">
+                    Passionate Fullstack Developer with practical experience in building Japanese enterprise outsourcing systems and web/mobile products. Proficient in <strong>React, Vue.js, Laravel, Node.js (Express), TypeScript</strong>, <strong>Nx Monorepo</strong> architecture, and <strong>Docker/Cloud VPS</strong> deployments.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-briefcase"></i> <span data-en="View Projects" data-vi="Xem dự án">View Projects</span>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="fas fa-envelope"></i> <span data-en="Contact Me" data-vi="Liên hệ">Contact Me</span>
+                    </a>
+                    <a href="https://github.com/tuanmoccs" target="_blank" class="btn btn-icon" title="GitHub Profile">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <div class="hero-tech-stack">
+                    <span class="tech-title" data-en="Core Tech Stack:" data-vi="Công nghệ chủ đạo:">Core Tech Stack:</span>
+                    <div class="tech-icons">
+                        <span class="tech-pill"><i class="fab fa-react"></i> React</span>
+                        <span class="tech-pill"><i class="fab fa-vuejs"></i> Vue.js</span>
+                        <span class="tech-pill"><i class="fab fa-laravel"></i> Laravel</span>
+                        <span class="tech-pill"><i class="fab fa-node-js"></i> Node.js</span>
+                        <span class="tech-pill"><i class="fas fa-code"></i> TypeScript</span>
+                        <span class="tech-pill"><i class="fab fa-docker"></i> Docker</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <div class="profile-card">
+                    <div class="image-frame">
+                        <img src="images/TuanAnh.jpg" alt="Trinh Tuan Anh" class="profile-img">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="education" class="hidden">
+    <!-- About Section -->
+    <section id="about" class="section alt-bg">
         <div class="container">
-            <h2>Education</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-date">09/2021 - Present</div>
-                        <h3>INFORMATION TECHNOLOGY</h3>
-                        <p>HOC VIEN KY THUAT MAT MA</p>
-                        <p>Specialization: Embedded and mobile systems</p>
+            <div class="section-header">
+                <span class="section-tag" data-en="Overview" data-vi="Tổng quan">Overview</span>
+                <h2 class="section-title" data-en="About Me" data-vi="Giới Thiệu Bản Thân">About Me</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-card card-panel">
+                    <div class="card-icon"><i class="fas fa-user"></i></div>
+                    <h3 data-en="Personal Information" data-vi="Thông Tin Cá Nhân">Personal Information</h3>
+                    <p data-en="Driven by hands-on development experience in company product platforms and Japanese outsource projects, I focus on writing clean maintainable code, optimizing user experience, and building reliable software architecture." data-vi="Với kinh nghiệm tích lũy qua các dự án sản phẩm thực tế và outsource Nhật Bản, tôi tập trung vào việc viết mã nguồn sạch, tối ưu trải nghiệm người dùng và xây dựng kiến trúc hệ thống bền vững.">
+                        Driven by hands-on development experience in company product platforms and Japanese outsource projects, I focus on writing clean maintainable code, optimizing user experience, and building reliable software architecture.
+                    </p>
+                    <ul class="info-list">
+                        <li><i class="fas fa-calendar-alt"></i> <span data-en="Date of Birth:" data-vi="Ngày sinh:">Date of Birth:</span> 01/08/2003</li>
+                        <li><i class="fas fa-envelope"></i> <span>Email:</span> trinhmoc18@gmail.com</li>
+                        <li><i class="fas fa-phone-alt"></i> <span data-en="Phone:" data-vi="Điện thoại:">Phone:</span> 0971627072</li>
+                        <li><i class="fas fa-map-marker-alt"></i> <span data-en="Location:" data-vi="Địa chỉ:">Location:</span> Hanoi, Vietnam</li>
+                    </ul>
+                </div>
+
+                <div class="about-card card-panel">
+                    <div class="card-icon"><i class="fas fa-bullseye"></i></div>
+                    <h3 data-en="Career Goals" data-vi="Mục Tiêu Phát Triển">Career Goals</h3>
+                    <div class="goal-item">
+                        <div class="goal-header">
+                            <i class="fas fa-seedling"></i>
+                            <h4 data-en="Short-term Objective" data-vi="Mục tiêu ngắn hạn">Short-term Objective</h4>
+                        </div>
+                        <p data-en="Quickly adapt to professional engineering environments, deepen advanced TypeScript expertise, optimize application performance, and practice modern CI/CD software workflows." data-vi="Nhanh chóng hòa nhập với môi trường làm việc chuyên nghiệp, nâng cao kỹ năng TypeScript nâng cao, tối ưu hiệu năng ứng dụng và thực hành các quy trình phát triển hiện đại.">
+                            Quickly adapt to professional engineering environments, deepen advanced TypeScript expertise, optimize application performance, and practice modern CI/CD software workflows.
+                        </p>
+                    </div>
+                    <div class="goal-item">
+                        <div class="goal-header">
+                            <i class="fas fa-rocket"></i>
+                            <h4 data-en="Long-term Objective" data-vi="Mục tiêu dài hạn">Long-term Objective</h4>
+                        </div>
+                        <p data-en="Become a well-rounded Senior Fullstack Engineer & System Architect, mastering distributed systems, high-availability setups, and delivering large-scale enterprise software solutions." data-vi="Trở thành nhà phát triển Fullstack toàn diện, mở rộng kiến thức về kiến trúc hệ thống phân tán, High-Availability và xây dựng các giải pháp phần mềm quy mô lớn.">
+                            Become a well-rounded Senior Fullstack Engineer & System Architect, mastering distributed systems, high-availability setups, and delivering large-scale enterprise software solutions.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="skills" class="hidden">
+    <!-- Work Experience Section -->
+    <section id="experience" class="section">
         <div class="container">
-            <h2>Skills</h2>
-            <div class="skills-container">
-                <div class="skills-category">
-                    <h3>Technical Skills</h3>
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>HTML/CSS</span>
-                            <span>70%</span>
+            <div class="section-header">
+                <span class="section-tag" data-en="Career Journey" data-vi="Quá trình làm việc">Career Journey</span>
+                <h2 class="section-title" data-en="Work Experience" data-vi="Kinh Nghiệm Thực Tế">Work Experience</h2>
+            </div>
+            <div class="timeline-container">
+                <!-- DS Solution -->
+                <div class="timeline-box left">
+                    <div class="timeline-content card-panel">
+                        <div class="company-badge">
+                            <span class="time-badge"><i class="far fa-calendar-alt"></i> 09/2025 - 06/2026</span>
+                            <span class="role-badge" data-en="Japanese Outsource" data-vi="Outsource Nhật Bản">Japanese Outsource</span>
                         </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 70%;"></div>
+                        <h3 class="role-title">Developer</h3>
+                        <h4 class="company-name"><i class="fas fa-building"></i> DS Solution</h4>
+                        <p class="role-desc" data-en="Participated in developing Japanese outsource projects. Adhered strictly to code quality guidelines, unit testing practices, and modern system design standards." data-vi="Tham gia phát triển các dự án Outsource cho thị trường Nhật Bản. Tuân thủ nghiêm ngặt quy trình kiểm thử, quy chuẩn viết code và thiết kế hệ thống theo mô hình hiện đại.">
+                            Participated in developing Japanese outsource projects. Adhered strictly to code quality guidelines, unit testing practices, and modern system design standards.
+                        </p>
+                        <div class="key-achievements">
+                            <h5 data-en="Key Projects & Responsibilities:" data-vi="Các dự án & nhiệm vụ chính:">Key Projects & Responsibilities:</h5>
+                            <ul>
+                                <li data-en="REIMS (Internal Research Management): Built monorepo structure using Nx, React, TypeScript, and Express.js. Applied Controller-Service-Repository pattern, TypeORM migrations, and Zod input validation." data-vi="REIMS (Hệ thống quản lý nghiên cứu nội bộ): Xây dựng mô hình Monorepo với Nx, React, TypeScript và Express.js. Áp dụng chuẩn Controller-Service-Repository, TypeORM migrations và Zod validation.">
+                                    <strong>REIMS (Internal Research Management):</strong> Built monorepo structure using Nx, React, TypeScript, and Express.js. Applied Controller-Service-Repository pattern, TypeORM migrations, and Zod input validation.
+                                </li>
+                                <li data-en="JWNET (Waste Manifest Management System): Developed enterprise features for waste manifests, facilities, QR codes, and reports. Designed database models with Laravel Eloquent, Soft Deletes, Transactions, and RBAC." data-vi="JWNET (Hệ thống quản lý chứng từ rác thải): Xây dựng các tính năng quản lý chứng từ, doanh nghiệp, QR code và báo cáo nghiệp vụ. Thiết kế CSDL với Laravel Eloquent, xử lý Soft Delete, Transaction và RBAC.">
+                                    <strong>JWNET (Waste Manifest Management System):</strong> Developed enterprise features for waste manifests, facilities, QR codes, and reports. Designed database models with Laravel Eloquent, Soft Deletes, Transactions, and RBAC.
+                                </li>
+                            </ul>
                         </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>JavaScript</span>
-                            <span>60%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 60%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>PHP</span>
-                            <span>75%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 75%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>Java</span>
-                            <span>50%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 50%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>C</span>
-                            <span>50%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 50%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>Bootstrap</span>
-                            <span>70%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 70%;"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skills-category">
-                    <h3>Frameworks & Databases</h3>
-                    <div class="skill-item">
-                        <div class="skill-name">
+                        <div class="tech-tags">
+                            <span>TypeScript</span>
+                            <span>React</span>
+                            <span>Nx Monorepo</span>
+                            <span>Node.js</span>
+                            <span>Express.js</span>
                             <span>Laravel</span>
-                            <span>70%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 70%;"></div>
+                            <span>PostgreSQL</span>
+                            <span>Docker</span>
                         </div>
                     </div>
-                    <div class="skill-item">
-                        <div class="skill-name">
+                </div>
+
+                <!-- NIMBUS Technology -->
+                <div class="timeline-box right">
+                    <div class="timeline-content card-panel">
+                        <div class="company-badge">
+                            <span class="time-badge"><i class="far fa-calendar-alt"></i> 01/2025 - 08/2025</span>
+                            <span class="role-badge" data-en="Product Company" data-vi="Product Company">Product Company</span>
+                        </div>
+                        <h3 class="role-title">Developer</h3>
+                        <h4 class="company-name"><i class="fas fa-building"></i> NIMBUS Technology</h4>
+                        <p class="role-desc" data-en="Participated in developing company product solutions. Designed database schemas, built RESTful APIs, and constructed interactive UIs for recruitment & HR platforms." data-vi="Tham gia phát triển trực tiếp dự án Product của công ty. Thiết kế CSDL, xây dựng RESTful APIs và giao diện người dùng cho các hệ thống nhân sự & tuyển dụng.">
+                            Participated in developing company product solutions. Designed database schemas, built RESTful APIs, and constructed interactive UIs for recruitment & HR platforms.
+                        </p>
+                        <div class="key-achievements">
+                            <h5 data-en="Key Projects & Responsibilities:" data-vi="Các dự án & nhiệm vụ chính:">Key Projects & Responsibilities:</h5>
+                            <ul>
+                                <li data-en="Internal HR & Recruitment Platform: Developed web system assisting TA & BD teams in HR management and hiring. Integrated Mattermost Webhooks for automated task reminders." data-vi="Quản lý Nhân sự Nội bộ: Phát triển website hỗ trợ TA & BD trong việc quản lý và tuyển dụng. Tích hợp Mattermost Webhook tự động gửi thông báo công việc và nhắc nhở.">
+                                    <strong>Internal HR & Recruitment Platform:</strong> Developed web system assisting TA & BD teams in HR management and hiring. Integrated Mattermost Webhooks for automated task reminders.
+                                </li>
+                                <li data-en="DOMDOM.VN: Built portal connecting study abroad and labor export candidates. Integrated third-party services including AWS SES (automated email dispatching) and Google Console API." data-vi="DOMDOM.VN: Xây dựng nền tảng kết nối du học & xuất khẩu lao động. Tích hợp các dịch vụ bên thứ ba như AWS SES (email dispatching) và Google Console API.">
+                                    <strong>DOMDOM.VN:</strong> Built portal connecting study abroad and labor export candidates. Integrated third-party services including AWS SES (automated email dispatching) and Google Console API.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tech-tags">
+                            <span>Laravel</span>
                             <span>Vue.js</span>
-                            <span>70%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 70%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>React-Native</span>
-                            <span>60%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 70%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>MySQL</span>
-                            <span>75%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 75%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>Postgre SQL</span>
-                            <span>65%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 65%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>SQL Server</span>
-                            <span>65%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 65%;"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skills-category">
-                    <h3>Soft Skills</h3>
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>Teamwork</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 90%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>Communication</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 85%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>Problem Solving</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 80%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>Self-learning</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 90%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>Adaptability</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 85%;"></div>
+                            <span>PostgreSQL</span>
+                            <span>AWS SES</span>
+                            <span>Mattermost Webhook</span>
                         </div>
                     </div>
                 </div>
@@ -229,82 +220,335 @@
         </div>
     </section>
 
-    <section id="projects" class="hidden">
+    <!-- Projects Section -->
+    <section id="projects" class="section alt-bg">
         <div class="container">
-            <h2>Projects</h2>
+            <div class="section-header">
+                <span class="section-tag" data-en="Portfolio" data-vi="Sản phẩm">Portfolio</span>
+                <h2 class="section-title" data-en="Featured Projects" data-vi="Dự Án Đã Thực Hiện">Featured Projects</h2>
+                <p class="section-subtitle" data-en="Selected enterprise outsourcing systems and web/mobile software solutions" data-vi="Danh sách các dự án thực tế và sản phẩm cá nhân nổi bật">Selected enterprise outsourcing systems and web/mobile software solutions</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all" data-en="All Projects" data-vi="Tất cả dự án">All Projects</button>
+                <button class="filter-btn" data-filter="enterprise" data-en="Outsource & Enterprise" data-vi="Outsource & Enterprise">Outsource & Enterprise</button>
+                <button class="filter-btn" data-filter="fullstack" data-en="Fullstack Web" data-vi="Fullstack Web">Fullstack Web</button>
+                <button class="filter-btn" data-filter="mobile" data-en="Mobile App" data-vi="Mobile App">Mobile App</button>
+            </div>
+
             <div class="projects-grid">
-                <div class="project-card">
-                    <img src="images/domdom.png" alt="Timetable Management" class="project-img">
-                    <div class="project-content">
-                        <h3>DOMDOM.VN</h3>
-                        <p class="project-date">04/2025 - 09/2025</p>
-                        <p>Website supporting studying abroad and labor export. Support users in finding jobs, employers can post jobs and advise users on study abroad or labor export positions that the company is recruiting.</p>
-                        <div class="project-tech">
-                            <strong>Technologies:</strong> Laravel, Vue.js (Nuxt), PostgreSQL
+
+                <!-- Project 1: REIMS -->
+                <div class="project-card card-panel" data-category="enterprise fullstack">
+                    <div class="project-img-container">
+                        <div class="project-banner banner-blue">
+                            <i class="fas fa-database banner-icon"></i>
+                            <span class="project-type-tag" data-en="Japanese Outsource" data-vi="Outsource Nhật Bản">Japanese Outsource</span>
                         </div>
-                        <div class="project-links">
-                            <!-- <a href="https://github.com/tuanmoccs/qlytkb" target="_blank"><i class="fab fa-github"></i> Code</a> -->
-                            <a href="https://domdom.vn/" target="_blank"><i class="fas fa-external-link-alt"></i> Link</a>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-date"><i class="far fa-calendar-alt"></i> 02/2026 - 07/2026</span>
+                            <span class="company-tag">DS Solution</span>
+                        </div>
+                        <h3 class="project-title" data-en="REIMS - Internal Research Management" data-vi="REIMS - Quản Lý Thông Tin Nghiên Cứu">REIMS - Internal Research Management</h3>
+                        <p class="project-desc" data-en="Enterprise research information management system built on Nx Monorepo, enabling shared type definitions and validation schemas between Frontend and Backend." data-vi="Hệ thống quản lý thông tin nghiên cứu nội bộ phát triển theo kiến trúc Nx Monorepo, giúp tái sử dụng types và validation schemas giữa Frontend và Backend.">
+                            Enterprise research information management system built on Nx Monorepo, enabling shared type definitions and validation schemas between Frontend and Backend.
+                        </p>
+                        <ul class="project-highlights">
+                            <li data-en="Nx Monorepo architecture for optimized codebase." data-vi="Kiến trúc Nx Monorepo tối ưu mã nguồn."><i class="fas fa-check-circle"></i> Nx Monorepo architecture for optimized codebase.</li>
+                            <li data-en="Frontend built with React, Material UI, React Hook Form & Zod." data-vi="Frontend với React, Material UI, React Hook Form & Zod."><i class="fas fa-check-circle"></i> Frontend built with React, Material UI, React Hook Form & Zod.</li>
+                            <li data-en="Backend REST API with Express.js & TypeORM following Controller-Service-Repository." data-vi="Backend Express.js & TypeORM theo chuẩn Controller-Service-Repository."><i class="fas fa-check-circle"></i> Backend REST API with Express.js & TypeORM following Controller-Service-Repository.</li>
+                        </ul>
+                        <div class="project-tech-stack">
+                            <span>TypeScript</span>
+                            <span>React</span>
+                            <span>Express.js</span>
+                            <span>Nx Monorepo</span>
+                            <span>TypeORM</span>
+                            <span>PostgreSQL</span>
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
-                    <img src="images/nimbus.png" alt="Timetable Management" class="project-img">
-                    <div class="project-content">
-                        <h3>NIMBUS</h3>
-                        <p class="project-date">07/2025 - 08/2025</p>
-                        <p>The website supports TA and BD in management and recruitment, supports admin in managing human resources, HR Assistant in managing human resources in charge, ...</p>
-                        <div class="project-tech">
-                            <strong>Technologies:</strong> Laravel, Vue.js , PostgreSQL
+
+                <!-- Project 2: JWNET -->
+                <div class="project-card card-panel" data-category="enterprise fullstack">
+                    <div class="project-img-container">
+                        <div class="project-banner banner-slate">
+                            <i class="fas fa-file-contract banner-icon"></i>
+                            <span class="project-type-tag" data-en="Japanese Outsource" data-vi="Outsource Nhật Bản">Japanese Outsource</span>
                         </div>
-                        <div class="project-links">
-                            <!-- <a href="https://github.com/tuanmoccs/qlytkb" target="_blank"><i class="fab fa-github"></i> Code</a> -->
-<!--                             <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Link</a> -->
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-date"><i class="far fa-calendar-alt"></i> 09/2025 - 03/2026</span>
+                            <span class="company-tag">DS Solution</span>
+                        </div>
+                        <h3 class="project-title" data-en="JWNET - Waste Manifest Management" data-vi="JWNET - Quản Lý Chứng Từ Rác Thải">JWNET - Waste Manifest Management</h3>
+                        <p class="project-desc" data-en="Waste manifest management system for Japanese enterprises featuring strict business rules, audit tracking, and QR code integration." data-vi="Hệ thống quản lý chứng từ rác thải công nghiệp cho doanh nghiệp Nhật Bản với các quy trình kiểm soát chặt chẽ và báo cáo chi tiết.">
+                            Waste manifest management system for Japanese enterprises featuring strict business rules, audit tracking, and QR code integration.
+                        </p>
+                        <ul class="project-highlights">
+                            <li data-en="Manifest, enterprise, facility, QR code & report management." data-vi="Quản lý chứng từ rác thải, doanh nghiệp, nhân viên, QR code."><i class="fas fa-check-circle"></i> Manifest, enterprise, facility, QR code & report management.</li>
+                            <li data-en="RBAC access control, Eloquent transactions & Soft Deletes." data-vi="Phân quyền người dùng RBAC, xử lý Transaction và Soft Delete."><i class="fas fa-check-circle"></i> RBAC access control, Eloquent transactions & Soft Deletes.</li>
+                            <li data-en="Containerized environment setup with Docker, upgraded Laravel core." data-vi="Thiết lập môi trường chạy với Docker, nâng cấp Laravel core."><i class="fas fa-check-circle"></i> Containerized environment setup with Docker, upgraded Laravel core.</li>
+                        </ul>
+                        <div class="project-tech-stack">
+                            <span>Laravel</span>
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                            <span>Docker</span>
+                            <span>jQuery</span>
+                            <span>Bootstrap</span>
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
-                    <img src="images/engapp.png" alt="Timetable Management" class="project-img-eng">
+
+                <!-- Project 3: Quản Lý Nhân Sự Nội Bộ -->
+                <div class="project-card card-panel" data-category="fullstack">
+                    <div class="project-img-container">
+                        <img src="images/nimbus.png" alt="NIMBUS HR Management" class="project-img">
+                        <span class="project-type-tag" data-en="Product Company" data-vi="Product Company">Product Company</span>
+                    </div>
                     <div class="project-content">
-                        <h3>ENGLISH LEARNING APP</h3>
-                        <p class="project-date">04/2025 - 07/2025</p>
-                        <p>English learning app for beginners includes reading and listening to help learners easily access lessons quickly and effectively.</p>
-                        <div class="project-tech">
-                            <strong>Technologies:</strong> React-Native, Laravel, MySQL
+                        <div class="project-meta">
+                            <span class="project-date"><i class="far fa-calendar-alt"></i> 04/2025 - 09/2025</span>
+                            <span class="company-tag">NIMBUS Tech</span>
                         </div>
-                        <div class="project-links">
-                            <a href="https://github.com/tuanmoccs/appeng_fe" target="_blank"><i class="fab fa-github"></i> Code FE</a>
-                            <a href="https://github.com/tuanmoccs/appeng_be" target="_blank"><i class="fab fa-github"></i> Code BE</a>
+                        <h3 class="project-title" data-en="Internal HR & Recruitment System" data-vi="Quản Lý Nhân Sự Nội Bộ & Tuyển Dụng">Internal HR & Recruitment System</h3>
+                        <p class="project-desc" data-en="Web platform assisting TA and BD departments in managing human resources, candidate tracking, and task delegation for HR Assistants." data-vi="Website hỗ trợ các phòng ban TA và BD trong công tác quản lý thông tin nhân sự và tuyển dụng, giao việc cho HR Assistant.">
+                            Web platform assisting TA and BD departments in managing human resources, candidate tracking, and task delegation for HR Assistants.
+                        </p>
+                        <ul class="project-highlights">
+                            <li data-en="Database design, REST API creation, and Vue.js frontend SPA." data-vi="Thiết kế CSDL, xây dựng API và phát triển giao diện Vue.js."><i class="fas fa-check-circle"></i> Database design, REST API creation, and Vue.js frontend SPA.</li>
+                            <li data-en="Mattermost Webhook integration for automated interview reminders." data-vi="Tích hợp Webhook Mattermost gửi thông báo nhắc lịch tự động."><i class="fas fa-check-circle"></i> Mattermost Webhook integration for automated interview reminders.</li>
+                        </ul>
+                        <div class="project-tech-stack">
+                            <span>Laravel</span>
+                            <span>Vue.js</span>
+                            <span>PostgreSQL</span>
+                            <span>Mattermost Webhook</span>
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
-                    <img src="images/ecommerce.jpg" alt="Ecommerce Shop" class="project-img">
+
+                <!-- Project 4: DOMDOM.VN -->
+                <div class="project-card card-panel" data-category="fullstack">
+                    <div class="project-img-container">
+                        <img src="images/domdom.png" alt="DOMDOM.VN" class="project-img">
+                        <span class="project-type-tag" data-en="Product Company" data-vi="Product Company">Product Company</span>
+                    </div>
                     <div class="project-content">
-                        <h3>Ecommerce Shop</h3>
-                        <p class="project-date">02/2025 - 03/2025</p>
-                        <p>Developed an online shopping website with product, order, and user management features. Includes shopping cart stored in database and admin panel.</p>
-                        <div class="project-tech">
-                            <strong>Technologies:</strong> Laravel, PHP, Bootstrap, MySQL
+                        <div class="project-meta">
+                            <span class="project-date"><i class="far fa-calendar-alt"></i> 01/2025 - 09/2025</span>
+                            <span class="company-tag">NIMBUS Tech</span>
+                        </div>
+                        <h3 class="project-title" data-en="DOMDOM.VN - Study Abroad & Labor Portal" data-vi="DOMDOM.VN - Hỗ Trợ Du Học & XKLĐ">DOMDOM.VN - Study Abroad & Labor Portal</h3>
+                        <p class="project-desc" data-en="Recruitment portal connecting candidates seeking study abroad or international labor positions with verified employers." data-vi="Website hỗ trợ người tìm việc làm du học hoặc xuất khẩu lao động; nhà tuyển dụng có thể đăng tin tuyển dụng và tư vấn trực tiếp.">
+                            Recruitment portal connecting candidates seeking study abroad or international labor positions with verified employers.
+                        </p>
+                        <ul class="project-highlights">
+                            <li data-en="Job search engine, job posting dashboard, and user consultations." data-vi="Xây dựng tính năng tìm kiếm việc làm, đăng tin và ứng tuyển."><i class="fas fa-check-circle"></i> Job search engine, job posting dashboard, and user consultations.</li>
+                            <li data-en="Integrated third-party services including AWS SES and Google Console API." data-vi="Làm việc với bên thứ 3 như AWS SES (email), Google Console API."><i class="fas fa-check-circle"></i> Integrated third-party services including AWS SES and Google Console API.</li>
+                        </ul>
+                        <div class="project-tech-stack">
+                            <span>Laravel</span>
+                            <span>Vue.js (Nuxt)</span>
+                            <span>PostgreSQL</span>
+                            <span>AWS SES</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/tuanmoccs/ecommerce" target="_blank"><i class="fab fa-github"></i> Code</a>
-                            <a href="http://tashop.infinityfreeapp.com/" target="_blank"><i class="fas fa-external-link-alt"></i> Link</a>
+                            <a href="https://domdom.vn/" target="_blank" class="btn btn-sm btn-outline"><i class="fas fa-external-link-alt"></i> <span data-en="Live Website" data-vi="Website demo">Live Website</span></a>
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
-                    <img src="images/document.jpg" alt="Document Library" class="project-img">
+
+                <!-- Project 5: English Learning App -->
+                <div class="project-card card-panel" data-category="mobile">
+                    <div class="project-img-container">
+                        <img src="images/engapp.png" alt="English App" class="project-img object-contain">
+                        <span class="project-type-tag" data-en="Mobile App" data-vi="Mobile App">Mobile App</span>
+                    </div>
                     <div class="project-content">
-                        <h3>Document Library Website</h3>
-                        <p class="project-date">10/2024 - 12/2024</p>
-                        <p>Provides learning materials and past exam papers for students with integrated ChatGPT for document analysis and online meeting rooms.</p>
-                        <div class="project-tech">
-                            <strong>Technologies:</strong> HTML, CSS, PHP, JavaScript, Bootstrap, MySQL
+                        <div class="project-meta">
+                            <span class="project-date"><i class="far fa-calendar-alt"></i> 04/2025 - 07/2025</span>
+                            <span class="company-tag" data-en="Personal Project" data-vi="Dự án cá nhân">Personal Project</span>
+                        </div>
+                        <h3 class="project-title" data-en="English Learning App" data-vi="English Learning App">English Learning App</h3>
+                        <p class="project-desc" data-en="Mobile learning application for beginners featuring listening and reading modules for quick and effective English learning." data-vi="Ứng dụng học tiếng Anh cho người mới bắt đầu bao gồm các bài luyện đọc và luyện nghe giúp học viên tiếp cận bài học hiệu quả.">
+                            Mobile learning application for beginners featuring listening and reading modules for quick and effective English learning.
+                        </p>
+                        <ul class="project-highlights">
+                            <li data-en="Smooth cross-platform mobile UI using React Native." data-vi="Phát triển giao diện di động bằng React Native."><i class="fas fa-check-circle"></i> Smooth cross-platform mobile UI using React Native.</li>
+                            <li data-en="Backend RESTful API with Laravel & MySQL database." data-vi="Xây dựng hệ thống RESTful API với Laravel & CSDL MySQL."><i class="fas fa-check-circle"></i> Backend RESTful API with Laravel & MySQL database.</li>
+                        </ul>
+                        <div class="project-tech-stack">
+                            <span>React Native</span>
+                            <span>Laravel</span>
+                            <span>MySQL</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/tuanmoccs/ttcsnhom31" target="_blank"><i class="fab fa-github"></i> Code</a>
-                            <a href="http://ttcs.wuaze.com/" target="_blank"><i class="fas fa-external-link-alt"></i> Link</a>
+                            <a href="https://github.com/tuanmoccs/appeng_fe" target="_blank" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> Source FE</a>
+                            <a href="https://github.com/tuanmoccs/appeng_be" target="_blank" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> Source BE</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6: Ecommerce Shop -->
+                <div class="project-card card-panel" data-category="fullstack">
+                    <div class="project-img-container">
+                        <img src="images/ecommerce.jpg" alt="Ecommerce Shop" class="project-img">
+                        <span class="project-type-tag" data-en="Web App" data-vi="Web App">Web App</span>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-date"><i class="far fa-calendar-alt"></i> 02/2025 - 03/2025</span>
+                            <span class="company-tag" data-en="Personal Project" data-vi="Dự án cá nhân">Personal Project</span>
+                        </div>
+                        <h3 class="project-title" data-en="E-Commerce Shopping Platform" data-vi="Website Bán Hàng Trực Tuyến">E-Commerce Shopping Platform</h3>
+                        <p class="project-desc" data-en="Online shopping website featuring product catalogs, database-backed shopping cart, order management, and admin dashboard." data-vi="Website mua sắm trực tuyến hỗ trợ quản lý sản phẩm, giỏ hàng lưu vào CSDL và hệ thống quản trị admin panel.">
+                            Online shopping website featuring product catalogs, database-backed shopping cart, order management, and admin dashboard.
+                        </p>
+                        <ul class="project-highlights">
+                            <li data-en="Order processing, product categories, and user management." data-vi="Xử lý đơn hàng, danh mục sản phẩm và quản lý người dùng."><i class="fas fa-check-circle"></i> Order processing, product categories, and user management.</li>
+                        </ul>
+                        <div class="project-tech-stack">
+                            <span>Laravel</span>
+                            <span>PHP</span>
+                            <span>Bootstrap</span>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/tuanmoccs/ecommerce" target="_blank" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> Source Code</a>
+                            <a href="http://tashop.infinityfreeapp.com/" target="_blank" class="btn btn-sm btn-outline"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-en="Skills" data-vi="Kỹ năng">Skills</span>
+                <h2 class="section-title" data-en="Technical Competencies" data-vi="Kỹ Năng Kỹ Thuật">Technical Competencies</h2>
+            </div>
+            
+            <div class="skills-grid">
+                <!-- Frontend -->
+                <div class="skills-category card-panel">
+                    <div class="skill-cat-header">
+                        <div class="cat-icon"><i class="fab fa-react"></i></div>
+                        <h3>Frontend Development</h3>
+                    </div>
+                    <div class="skill-tags-wrapper">
+                        <div class="skill-badge"><i class="fab fa-html5"></i> HTML5 / CSS3</div>
+                        <div class="skill-badge"><i class="fab fa-js"></i> JavaScript (ES6+)</div>
+                        <div class="skill-badge highlight"><i class="fas fa-code"></i> TypeScript</div>
+                        <div class="skill-badge highlight"><i class="fab fa-react"></i> React.js</div>
+                        <div class="skill-badge highlight"><i class="fab fa-vuejs"></i> Vue.js / Nuxt</div>
+                        <div class="skill-badge"><i class="fab fa-bootstrap"></i> Bootstrap</div>
+                        <div class="skill-badge"><i class="fas fa-layer-group"></i> Material UI</div>
+                        <div class="skill-badge"><i class="fas fa-bolt"></i> Vite / React Query</div>
+                        <div class="skill-badge"><i class="fas fa-check-double"></i> Zod / React Hook Form</div>
+                    </div>
+                </div>
+
+                <!-- Backend & Architecture -->
+                <div class="skills-category card-panel">
+                    <div class="skill-cat-header">
+                        <div class="cat-icon"><i class="fas fa-server"></i></div>
+                        <h3 data-en="Backend & Architecture" data-vi="Backend & Kiến Trúc">Backend & Architecture</h3>
+                    </div>
+                    <div class="skill-tags-wrapper">
+                        <div class="skill-badge highlight"><i class="fab fa-laravel"></i> Laravel</div>
+                        <div class="skill-badge highlight"><i class="fab fa-node-js"></i> Node.js / Express</div>
+                        <div class="skill-badge"><i class="fab fa-php"></i> PHP</div>
+                        <div class="skill-badge highlight"><i class="fas fa-sitemap"></i> Nx Monorepo</div>
+                        <div class="skill-badge"><i class="fas fa-database"></i> TypeORM / Eloquent</div>
+                        <div class="skill-badge"><i class="fas fa-network-wired"></i> RESTful API</div>
+                        <div class="skill-badge"><i class="fas fa-project-diagram"></i> Controller-Service-Repo</div>
+                    </div>
+                </div>
+
+                <!-- Databases & DevOps -->
+                <div class="skills-category card-panel">
+                    <div class="skill-cat-header">
+                        <div class="cat-icon"><i class="fas fa-database"></i></div>
+                        <h3 data-en="Databases & DevOps" data-vi="CSDL & DevOps / Cloud">Databases & DevOps</h3>
+                    </div>
+                    <div class="skill-tags-wrapper">
+                        <div class="skill-badge highlight"><i class="fas fa-database"></i> PostgreSQL</div>
+                        <div class="skill-badge"><i class="fas fa-database"></i> MySQL</div>
+                        <div class="skill-badge"><i class="fas fa-database"></i> SQL Server</div>
+                        <div class="skill-badge highlight"><i class="fab fa-docker"></i> Docker</div>
+                        <div class="skill-badge"><i class="fab fa-linux"></i> Linux (Ubuntu)</div>
+                        <div class="skill-badge"><i class="fab fa-aws"></i> AWS (EC2, SES)</div>
+                        <div class="skill-badge"><i class="fas fa-cloud"></i> DigitalOcean VPS</div>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="skills-category card-panel">
+                    <div class="skill-cat-header">
+                        <div class="cat-icon"><i class="fas fa-brain"></i></div>
+                        <h3 data-en="Soft Skills & Methods" data-vi="Kỹ Năng Mềm">Soft Skills & Methods</h3>
+                    </div>
+                    <div class="skill-tags-wrapper">
+                        <div class="skill-badge" data-en="Teamwork & Communication" data-vi="Làm việc nhóm & Giao tiếp tốt"><i class="fas fa-users"></i> Teamwork & Communication</div>
+                        <div class="skill-badge" data-en="Logical Thinking & Problem Solving" data-vi="Tư duy logic & Giải quyết vấn đề"><i class="fas fa-puzzle-piece"></i> Logical Thinking & Problem Solving</div>
+                        <div class="skill-badge" data-en="Self-learning & Tech Adaptability" data-vi="Khả năng tự học & Thích nghi nhanh"><i class="fas fa-lightbulb"></i> Self-learning & Tech Adaptability</div>
+                        <div class="skill-badge" data-en="Git Version Control & Workflow" data-vi="Quản lý mã nguồn với Git"><i class="fab fa-git-alt"></i> Git Version Control & Workflow</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Languages Section -->
+    <section id="education" class="section alt-bg">
+        <div class="container">
+            <div class="education-grid">
+                <!-- Education -->
+                <div class="edu-card card-panel">
+                    <div class="section-header align-left">
+                        <span class="section-tag" data-en="Education" data-vi="Đào tạo">Education</span>
+                        <h2 class="section-title" data-en="Academic Background" data-vi="Học Vấn">Academic Background</h2>
+                    </div>
+                    <div class="edu-item">
+                        <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="edu-details">
+                            <span class="edu-date"><i class="far fa-calendar-alt"></i> 09/2021 - 06/2026</span>
+                            <h3 class="school-name" data-en="Academy of Cryptography Techniques" data-vi="Học viện Kỹ thuật Mật mã">Academy of Cryptography Techniques</h3>
+                            <h4 class="major-name" data-en="Major: Information Technology" data-vi="Chuyên ngành: Công Nghệ Thông Tin">Major: Information Technology</h4>
+                            <p data-en="Solid foundation in computer science, software engineering, databases, algorithms, and mobile & embedded systems." data-vi="Được đào tạo nền tảng vững chắc về CNTT, phát triển phần mềm, CSDL, cấu trúc dữ liệu & giải thuật.">
+                                Solid foundation in computer science, software engineering, databases, algorithms, and mobile & embedded systems.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Languages -->
+                <div class="lang-card card-panel">
+                    <div class="section-header align-left">
+                        <span class="section-tag" data-en="Languages" data-vi="Ngoại ngữ">Languages</span>
+                        <h2 class="section-title" data-en="English Proficiency" data-vi="Tiếng Anh">English Proficiency</h2>
+                    </div>
+                    <div class="lang-item">
+                        <div class="lang-icon"><i class="fas fa-language"></i></div>
+                        <div class="lang-details">
+                            <h3>English (TOEIC 500+)</h3>
+                            <div class="badge-group">
+                                <span class="badge badge-blue">TOEIC 500+</span>
+                                <span class="badge badge-subtle" data-en="Target: TOEIC 750+" data-vi="Mục tiêu: TOEIC 750+">Target: TOEIC 750+</span>
+                            </div>
+                            <p data-en="Proficient in reading technical documentation, API specifications, and communicating effectively in engineering workflows." data-vi="Đọc hiểu tốt tài liệu kỹ thuật chuyên ngành tiếng Anh, tài liệu API và có khả năng trao đổi công việc.">
+                                Proficient in reading technical documentation, API specifications, and communicating effectively in engineering workflows.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -312,55 +556,57 @@
         </div>
     </section>
 
-    <section id="languages" class="hidden">
+    <!-- Contact Section -->
+    <section id="contact" class="section">
         <div class="container">
-            <h2>Languages</h2>
-            <div class="language-item">
-                <div class="language-icon">
-                    <i class="fas fa-language"></i>
+            <div class="section-header">
+                <span class="section-tag" data-en="Contact" data-vi="Liên hệ">Contact</span>
+                <h2 class="section-title" data-en="Get In Touch" data-vi="Kết Nối Với Tôi">Get In Touch</h2>
+                <p class="section-subtitle" data-en="Open for new full-stack software development opportunities and engineering collaborations!" data-vi="Tôi luôn hoan nghênh các cơ hội hợp tác và công việc mới!">Open for new full-stack software development opportunities and engineering collaborations!</p>
+            </div>
+            
+            <div class="contact-cards">
+                <div class="contact-card card-panel">
+                    <div class="c-icon"><i class="fas fa-envelope"></i></div>
+                    <h4>Email</h4>
+                    <p>trinhmoc18@gmail.com</p>
+                    <a href="mailto:trinhmoc18@gmail.com" class="btn btn-sm btn-primary" data-en="Send Email" data-vi="Gửi Email">Send Email</a>
                 </div>
-                <div class="language-details">
-                    <div class="language-name">English</div>
-                    <p>Ability to read and understand English documents. TOEIC 500+, goal to improve TOEIC 750+ and be able to communicate fluently.</p>
+                
+                <div class="contact-card card-panel">
+                    <div class="c-icon"><i class="fas fa-phone-alt"></i></div>
+                    <h4 data-en="Phone" data-vi="Điện thoại">Phone</h4>
+                    <p>0971627072</p>
+                    <a href="tel:0971627072" class="btn btn-sm btn-primary" data-en="Call Me" data-vi="Gọi điện">Call Me</a>
+                </div>
+
+                <div class="contact-card card-panel">
+                    <div class="c-icon"><i class="fab fa-github"></i></div>
+                    <h4>GitHub</h4>
+                    <p>github.com/tuanmoccs</p>
+                    <a href="https://github.com/tuanmoccs" target="_blank" class="btn btn-sm btn-outline" data-en="GitHub Profile" data-vi="Trang GitHub">GitHub Profile</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- <section id="contact" class="hidden">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <form class="contact-form" id="contactForm">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="subject">Subject</label>
-                    <input type="text" id="subject" name="subject" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
-                <button type="submit" class="submit-btn">Send Message</button>
-            </form>
-        </div>
-    </section> -->
-
-    <footer>
-        <div class="container">
-            <p>2025 Trinh Tuan Anh</p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 Trinh Tuan Anh. All rights reserved.</p>
+            <div class="footer-socials">
+                <a href="https://github.com/tuanmoccs" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:trinhmoc18@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
         </div>
     </footer>
 
-    <div class="back-to-top" id="backToTop">
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
         <i class="fas fa-arrow-up"></i>
-    </div>
-<script src="index.js"></script>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="index.js"></script>
 </body>
 </html>
