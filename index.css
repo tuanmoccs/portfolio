@@ -1194,3 +1194,46 @@ body {
         font-size: 1.8rem;
     }
 }
+
+
+/* Project Demo Account Info */
+.project-demo-account {
+    background: var(--primary-light);
+    border: 1px dashed var(--primary-border);
+    border-radius: var(--radius-sm);
+    padding: 10px 14px;
+    margin-bottom: 16px;
+    font-size: 0.82rem;
+}
+.demo-acc-title {
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.83rem;
+}
+.demo-acc-details {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px 16px;
+    color: var(--text-muted);
+}
+.demo-acc-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+.demo-acc-details code {
+    background: var(--bg-card);
+    padding: 2px 7px;
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+    color: var(--text-main);
+    font-size: 0.8rem;
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+    user-select: all;
+    font-weight: 600;
+}
